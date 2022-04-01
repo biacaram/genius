@@ -49,3 +49,15 @@ let checkOrder = () => {
         nextLevel();
     }
 }
+
+// clique do usuário
+let click = (color) => {
+    clickOrder.push(color);
+    createColorElement(color).classList.add('selected');
+
+    setTimeout(() => {
+        createColorElement(color).classList.remove('selected');
+    })
+
+    checkOrder();
+}
