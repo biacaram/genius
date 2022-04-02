@@ -26,26 +26,26 @@ let shuffleOrder = () => {
 
 // acende a próxima cor
 let lightColor = (element, number) => {
-    number = number * 500;
+    number = number * 700;
     setTimeout(() => {
         element.classList.add('selected');
-    }, number - 250);
+    }, number - 500);
 
     setTimeout(() => {
         element.classList.remove('selected');
-    }, 500);
+    }, number);
 }
 
 // checa se as cores foram clicadas na ordem certa
 let checkOrder = () => {
     for(let i in clickOrder) {
         if(clickOrder[i] != order[i]) {
-            lose();
+            gameOver();
             break;
         }
     }
     if(clickOrder.length == order.length) {
-        alert(`Pontuação: ${score}\n Você acertou! Iniciando próximo nível!`)
+        // alert(`Pontuação: ${score}\n Você acertou! Iniciando próximo nível!`)
         nextLevel();
     }
 }
@@ -82,7 +82,7 @@ let nextLevel = () => {
 
 // game over
 let gameOver = () => {
-    alert(`Pontuação: ${score}!\nGame Over :()`)
+    alert(`Pontuação: ${score}!\nGame Over :(`)
     order = [];
     clickOrder = [];
 
