@@ -62,9 +62,9 @@ body {
 
 @media screen and (max-width:600px) {
     .genius {
-        width: 100%;
+        width: 95%;
         height: 50%;
         grid-gap: 20px;
-        border: 50px solid #000;
+        border: 45px solid #000;
     }
 }
