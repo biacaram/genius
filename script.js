@@ -93,10 +93,7 @@ let playGame = () => {
     alert('Bem vindo ao Genius! Iniciando jogo!')
     score =0;
 
-    setTimeout(() => {
-        nextLevel(); 
-    }, 900);
-    
+    nextLevel();
 }
 
 green.onclick = () => click(0);
