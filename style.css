@@ -23,7 +23,7 @@ body {
     grid-gap: 40px;
     border: 100px solid #000;
     background-color: #000;
-    box-shadow: rgba(84, 84, 156, 0.25) 0px 50px 100px -20px, rgba(184, 184, 184, 0.3) 0px 30px 60px -30px, rgba(25, 90, 155, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(84, 84, 156, 0.25) 0px 50px 50px -20px inset, rgba(184, 184, 184, 0.3) 0px 10px 20px 20px, rgba(25, 90, 155, 0.35) 20px -2px 6px 0px inset;
     border-radius: 100%;
     width: 700px;
     height: 700px;
@@ -34,7 +34,7 @@ body {
     background-color: rgb(17, 17, 216);
     border-bottom-right-radius: 100%;
     opacity: 0.7;
-    box-shadow: rgba(84, 84, 156, 0.25) 0px 50px 100px -20px, rgba(184, 184, 184, 0.3) 0px 30px 60px -30px, rgba(25, 90, 155, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(84, 84, 156, 0.25) 0px 50px 100px -20px, rgba(184, 184, 184, 0.3) 0px 30px 60px -30px, rgba(2, 12, 22, 0.753) 0px -2px 6px 0px inset;
 }
 
 .red {
@@ -69,7 +69,7 @@ body {
     .genius {
         width: 95vw;
         height: 95vw;
-        grid-gap: 20px;
+        grid-gap: 25px;
         border: 12vw solid #000;
     }
 }
