@@ -17,6 +17,35 @@ body {
     align-items: center;
 }
 
+.menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: rgb(12, 12, 12) 30px solid;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.start-button {
+    font-size: 30px;
+    font-family: fantasy, monospace;
+    color: rgb(61, 61, 61);
+    padding: 80px 60px;
+    border-radius: 100%;
+    background-color: rgb(250, 235, 215);
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.start-button:hover {
+    opacity: 1;
+}
+
 .genius {
     display: grid;
     grid-template-areas: 'verde vermelho' 'amarelo azul';
@@ -71,5 +100,16 @@ body {
         height: 95vw;
         grid-gap: 25px;
         border: 12vw solid #000;
+    }
+
+    .menu {
+        width: 30vw;
+        height: 30vw;
+        border: rgb(15, 15, 15) 20px solid;
+    }
+
+    .start-button {
+        font-size: 18px;
+        padding: 8vw 6vw;
     }
 }

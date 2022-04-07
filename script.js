@@ -11,6 +11,7 @@ const green = document.querySelector('.green');
 const red = document.querySelector('.red');
 const blue = document.querySelector('.blue');
 const yellow = document.querySelector('.yellow');
+const startButton = document.querySelector('.start-button')
 
 // cria ordem aleatória
 let shuffleOrder = () => {
@@ -85,14 +86,13 @@ let gameOver = () => {
     alert(`Pontuação: ${score}!\nGame Over :(`)
     order = [];
     clickOrder = [];
-
-    playGame();
+    score = 0;
 }
 
 let playGame = () => {
-    alert('Bem vindo ao Genius! Iniciando jogo!')
-    score =0;
-
+    score = 0;
+    order = [];
+    clickOrder = [];
     nextLevel();
 }
 
@@ -100,6 +100,3 @@ green.onclick = () => click(0);
 red.onclick = () => click(1);
 blue.onclick = () => click(2);
 yellow.onclick = () => click(3);
-
-
-playGame();
