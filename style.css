@@ -32,9 +32,10 @@ body {
 
 .start-button {
     font-size: 30px;
-    font-family: fantasy, monospace;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
     color: rgb(61, 61, 61);
-    padding: 80px 60px;
+    padding: 80px 50px;
     border-radius: 100%;
     background-color: rgb(250, 235, 215);
     opacity: 0.8;
@@ -110,6 +111,6 @@ body {
 
     .start-button {
         font-size: 18px;
-        padding: 8vw 6vw;
+        padding: 7vw 3vw;
     }
 }
